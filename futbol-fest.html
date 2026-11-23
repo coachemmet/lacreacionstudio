@@ -19,6 +19,29 @@
   <link rel="stylesheet" href="assets/site.css">
 
   <script src="assets/site.js" defer></script>
+  <style>
+    .ff-grid { display: grid; gap: 1.25rem; }
+    .ff-split { grid-template-columns: 1.3fr 1fr; align-items: center; }
+    .ff-sponsor-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .ff-sponsor-heading { margin: 2rem 0 1rem; }
+    .ff-sponsor-grid h4 { margin: 0 0 .4rem; font-size: 1.1rem; }
+    .ff-list { padding-inline-start: 1.2rem; line-height: 1.65; }
+    .ff-zones { list-style: none; display: grid; gap: .35rem; padding: 0; }
+    .ff-marker {
+      display: inline-block; width: .85rem; height: .85rem; margin-inline-end: .6rem;
+      border-radius: 50%; background: var(--marker);
+    }
+    .ff-media { display: block; width: 100%; height: auto; border-radius: 1rem; }
+    .ff-broadcast { aspect-ratio: 4 / 3; object-fit: cover; object-position: center 42%; }
+    .ff-studio { border-top: 1px solid #ffffff30; margin-top: 2rem; padding-top: 1.25rem; }
+    @media (max-width: 760px) {
+      .ff-split { grid-template-columns: 1fr; }
+      .ff-sponsor-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 400px) {
+      .ff-sponsor-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
   <a class="button skip" href="#contenido">Saltar al contenido</a>
@@ -32,31 +55,91 @@
   </header>
 <main id="contenido">
 <div class="wrap detail-hero" id="inicio">
-  <div class="detail-text"><span class="eyebrow">Evento actual · Mérida, Venezuela</span><h1>Fútbol <span class="futbol-color">Fest.</span></h1><h2>Edición navideña</h2><p>La magia de la Navidad se juega en equipo.</p><p>Fútbol, familia, comunidad y marcas se reúnen en la edición navideña de Fútbol Fest. Una experiencia que sucede dentro y fuera de la cancha.</p><ul class="pill-list"><li>Diciembre 2026</li><li>MetroAtletik</li><li>Categorías 2017–2020</li></ul>
-    <div class="actions"><a class="button" href="mailto:eli@lacreacionstudio.com?subject=F%C3%BAtbol%20Fest%20-%20Informaci%C3%B3n">Quiero más información</a><a class="button alt" href="assets/futbol-fest-presentacion.pdf" target="_blank" rel="noopener">Ver presentación (PDF)</a><a class="text-link" href="index.html#proyectos">Volver a proyectos</a></div>
+  <div class="detail-text">
+    <span class="eyebrow">Evento actual · Mérida, Venezuela</span>
+    <h1>Fútbol <span class="futbol-color">Fest.</span></h1>
+    <h2>Edición navideña</h2>
+    <p>La magia de la Navidad se juega en equipo.</p>
+    <ul class="pill-list">
+      <li>18 al 20 de diciembre de 2026</li>
+      <li>MetroAtletik</li>
+      <li>Categorías 2017–2020</li>
+    </ul>
+    <div class="actions">
+      <a class="button" href="#contacto">Quiero más información</a>
+      <a class="button alt" href="#patrocinios">Ver patrocinios</a>
+    </div>
   </div>
-  <div class="detail-img poster"><img src="assets/futbol-1.webp" alt="Identidad oficial de Fútbol Fest edición navideña" width="920" height="1636" decoding="async" fetchpriority="high"></div>
+  <div class="detail-img poster"><img src="assets/futbol-fest-edicion.webp" alt="Afiche oficial de Fútbol Fest edición navideña" width="648" height="1152" decoding="async" fetchpriority="high"></div>
 </div>
-<section class="section band feature"><div class="wrap">
-  <div class="section-head"><div><span class="eyebrow">La experiencia</span><h2>Una gran fiesta del fútbol.</h2></div></div>
-  <div class="info-grid"><article class="info-card"><h3>4 categorías</h3><p>Participantes nacidos en 2017, 2018, 2019 y 2020.</p></article><article class="info-card"><h3>20 equipos</h3><p>Proyección presentada en el dossier de la edición navideña.</p></article><article class="info-card"><h3>Mucho más que partidos</h3><p>Experiencia familiar, contenido, transmisión y espacios para marcas.</p></article></div>
+
+<section class="section band feature" id="experiencia"><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">Fútbol · Familia · Comunidad · Marcas</span><h2>Una gran familia del fútbol</h2></div></div>
+  <p>Fútbol Fest reúne a jugadores, familias y marcas para celebrar la Navidad dentro y fuera de la cancha.</p>
+  <h3>Categorías por año de nacimiento</h3>
+  <ul class="pill-list"><li>2017</li><li>2018</li><li>2019</li><li>2020</li></ul>
 </div></section>
-<section class="section band"><div class="wrap">
-  <div class="section-head"><div><span class="eyebrow">Presentación del evento</span><h2>Así se vive Fútbol Fest.</h2></div></div>
-  <div class="gallery"><a class="gallery-item" href="assets/futbol-2.webp" target="_blank" rel="noopener noreferrer"><img src="assets/futbol-2.webp" alt="La magia de la Navidad se juega en equipo" width="920" height="1636" decoding="async" loading="lazy"></a><a class="gallery-item" href="assets/futbol-3.webp" target="_blank" rel="noopener noreferrer"><img src="assets/futbol-3.webp" alt="Categorías y propuesta del torneo" width="920" height="1636" decoding="async" loading="lazy"></a><a class="gallery-item" href="assets/futbol-4.webp" target="_blank" rel="noopener noreferrer"><img src="assets/futbol-4.webp" alt="Activaciones para marcas y cobertura" width="920" height="1636" decoding="async" loading="lazy"></a><a class="gallery-item" href="assets/futbol-5.webp" target="_blank" rel="noopener noreferrer"><img src="assets/futbol-5.webp" alt="Modalidades de patrocinio" width="920" height="1636" decoding="async" loading="lazy"></a><a class="gallery-item" href="assets/futbol-6.webp" target="_blank" rel="noopener noreferrer"><img src="assets/futbol-6.webp" alt="Hagamos equipo esta Navidad" width="920" height="1636" decoding="async" loading="lazy"></a></div>
+
+<section class="section band" id="patrocinios"><div class="wrap">
+  <div class="section-head"><div><h2>Tu marca también juega</h2><p>De espectador a protagonista de la experiencia.</p></div></div>
+  <div class="info-grid">
+    <article class="info-card"><h3>Activa</h3><ul class="ff-list"><li>Fan Zone</li><li>Zona de hidratación</li><li>Experiencia navideña</li></ul></article>
+    <article class="info-card"><h3>Conecta</h3><ul class="ff-list"><li>Jugador del partido</li><li>Premiación</li><li>Contenido</li></ul></article>
+    <article class="info-card"><h3>Amplifica</h3><ul class="ff-list"><li>Transmisión</li><li>Redes sociales</li><li>Video</li></ul></article>
+  </div>
+  <h3 class="ff-sponsor-heading">Elige cómo ser parte</h3>
+  <div class="ff-grid ff-sponsor-grid">
+    <article class="info-card"><h4>Presenting Sponsor</h4><p>Marca protagonista</p></article>
+    <article class="info-card"><h4>Oro</h4><p>Visibilidad y activación</p></article>
+    <article class="info-card"><h4>Plata</h4><p>Presencia física y digital</p></article>
+    <article class="info-card"><h4>Bronce</h4><p>Marca aliada</p></article>
+  </div>
+  <div class="actions"><a class="button" href="mailto:eli@lacreacionstudio.com?subject=Patrocinio%20F%C3%BAtbol%20Fest">Consultar patrocinio</a></div>
 </div></section>
+
+<section class="section band feature" id="zonas"><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">MetroAtletik · Mérida</span><h2>Zonas del festival</h2></div></div>
+  <div class="ff-grid ff-split">
+    <img class="ff-media" src="assets/futbol-fest-mapa.webp" width="864" height="440" loading="lazy" decoding="async" alt="Croquis de MetroAtletik con la entrada, el estacionamiento, las canchas y las zonas del festival">
+    <ul class="ff-list ff-zones">
+      <li><span class="ff-marker" style="--marker:#c956d8"></span>Zona de entretenimiento</li>
+      <li><span class="ff-marker" style="--marker:#356b9b"></span>Entrada</li>
+      <li><span class="ff-marker" style="--marker:#e44242"></span>Zona de comida</li>
+      <li><span class="ff-marker" style="--marker:#d89128"></span>Stand de patrocinadores</li>
+      <li><span class="ff-marker" style="--marker:#39cf6e"></span>Cancha 1</li>
+      <li><span class="ff-marker" style="--marker:#437bf5"></span>Cancha 2</li>
+      <li><span class="ff-marker" style="--marker:#dbe1e4"></span>Estacionamiento</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="section band" id="en-vivo"><div class="wrap ff-grid ff-split">
+  <div>
+    <span class="eyebrow">YouTube · Edición navideña</span>
+    <h2>Transmisión en vivo</h2>
+    <p>La transmisión oficial de Fútbol Fest lleva los partidos a quienes siguen el torneo desde casa y ofrece exposición a las marcas durante la cobertura.</p>
+    <div class="actions"><a class="button alt" href="https://www.youtube.com/@LaCreaci%C3%B3nStudio7/streams" target="_blank" rel="noopener noreferrer">Ver el canal en YouTube</a></div>
+  </div>
+  <img class="ff-media ff-broadcast" src="assets/futbol-fest-transmision.webp" width="864" height="992" loading="lazy" decoding="async" alt="Equipo de La Creación Studio produciendo una transmisión de fútbol">
+</div></section>
+
 <section class="section band" id="contacto">
   <div class="wrap contact-panel">
-    <span class="eyebrow">Marcas y patrocinadores</span>
-    <h2>Tu marca también juega.</h2>
-    <p>El dossier presenta modalidades de participación Presenting Sponsor, Oro, Plata y Bronce, con opciones de activación, presencia en el evento y visibilidad digital.</p>
+    <span class="eyebrow">Fútbol Fest · Edición navideña</span>
+    <h2>Hagamos equipo esta Navidad</h2>
     <div class="actions">
-      <a class="button" href="https://wa.me/584220710134?text=Hola%2C%20quiero%20hablar%20sobre%20un%20proyecto%20con%20La%20Creaci%C3%B3n%20Studio." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
-      <a class="button alt" href="mailto:eli@lacreacionstudio.com?subject=Patrocinio%20F%C3%BAtbol%20Fest">Enviar un correo</a>
+      <a class="button" href="https://wa.me/584220710134?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20F%C3%BAtbol%20Fest%20Navidad." target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+      <a class="button alt" href="mailto:eli@lacreacionstudio.com?subject=F%C3%BAtbol%20Fest%20-%20Informaci%C3%B3n">Enviar un correo</a>
     </div>
-    <a class="text-link" href="mailto:eli@lacreacionstudio.com?subject=Patrocinio%20F%C3%BAtbol%20Fest">eli@lacreacionstudio.com</a>
+    <a class="text-link" href="mailto:eli@lacreacionstudio.com">eli@lacreacionstudio.com</a>
+    <div class="ff-studio">
+      <h3>Tu idea, nosotros la creamos.</h3>
+      <p>Podcast · Audiovisual · Streaming · Diseño · Producción 360°</p>
+      <a class="text-link" href="index.html#servicios">Conoce La Creación Studio</a>
+    </div>
   </div>
 </section>
+
 <section class="section band tv" id="transmisiones"><div class="wrap">
   <div class="section-head"><div><span class="eyebrow">Archivo · Primera edición</span><h2>Partidos de la primera edición</h2></div></div>
   <div class="video-grid">
