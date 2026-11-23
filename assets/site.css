@@ -115,6 +115,8 @@ ul{padding-left:1.25rem}
 .detail-hero{padding-block:clamp(2.65rem,7.5vw,6rem);align-items:center}
 .detail-hero h1{margin:.7rem 0 1.1rem;line-height:.93;letter-spacing:-.07em}
 .detail-hero h1 span{display:block}
+.detail-hero-text{grid-template-columns:1fr}
+.detail-hero-text h1 span{display:inline}
 .detail-text p{max-width:43ch;font-size:clamp(1rem,1.8vw,1.16rem)}
 .detail-text p+p{margin-top:.7rem}
 .detail-img{border-radius:var(--radius);border:1px solid var(--line);overflow:hidden;background:var(--panel)}
