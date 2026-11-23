@@ -132,14 +132,14 @@ ul{padding-left:1.25rem}
 .gallery a:hover{border-color:var(--lime)}
 .gallery img{width:100%}
 .profile-photo{overflow:hidden}
-.profile-enter{animation:profile-enter .58s cubic-bezier(.2,.7,.2,1) var(--profile-delay,0ms) backwards}
-@keyframes profile-enter{
+.scroll-enter{animation:scroll-enter .58s cubic-bezier(.2,.7,.2,1) var(--scroll-delay,0ms) backwards}
+@keyframes scroll-enter{
  from{opacity:.62;transform:translateY(.75rem)}
  to{opacity:1;transform:translateY(0)}
 }
 @media(min-width:821px){
- .profile:nth-child(3n+2){--profile-delay:75ms}
- .profile:nth-child(3n+3){--profile-delay:150ms}
+ .profile:nth-child(3n+2),#servicios .service-card:nth-child(3n+2){--scroll-delay:75ms}
+ .profile:nth-child(3n+3),#servicios .service-card:nth-child(3n+3){--scroll-delay:150ms}
 }
 @media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
  .profile-photo img{transition:transform .48s cubic-bezier(.2,.7,.2,1)}

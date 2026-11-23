@@ -33,16 +33,18 @@ if (menuButton && navigation) {
 const currentYear = document.querySelector('.current-year')
 if (currentYear) currentYear.textContent = String(new Date().getFullYear())
 
-const profiles = document.querySelectorAll('.profile-grid .profile')
+const scrollItems = document.querySelectorAll(
+  '#servicios .section-head, #servicios .service-card, .profile-grid .profile'
+)
 
-if (profiles.length && 'IntersectionObserver' in window) {
-  const profileObserver = new IntersectionObserver((entries) => {
+if (scrollItems.length && 'IntersectionObserver' in window) {
+  const scrollObserver = new IntersectionObserver((entries) => {
     for (const { target, isIntersecting } of entries) {
       if (!isIntersecting) continue
-      target.classList.add('profile-enter')
-      profileObserver.unobserve(target)
+      target.classList.add('scroll-enter')
+      scrollObserver.unobserve(target)
     }
-  }, { rootMargin: '0px 0px 40px 0px' })
+  }, { rootMargin: '0px 0px -20px 0px' })
 
-  profiles.forEach((profile) => profileObserver.observe(profile))
+  scrollItems.forEach((item) => scrollObserver.observe(item))
 }
