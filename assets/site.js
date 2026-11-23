@@ -32,3 +32,17 @@ if (menuButton && navigation) {
 
 const currentYear = document.querySelector('.current-year')
 if (currentYear) currentYear.textContent = String(new Date().getFullYear())
+
+const profiles = document.querySelectorAll('.profile-grid .profile')
+
+if (profiles.length && 'IntersectionObserver' in window) {
+  const profileObserver = new IntersectionObserver((entries) => {
+    for (const { target, isIntersecting } of entries) {
+      if (!isIntersecting) continue
+      target.classList.add('profile-enter')
+      profileObserver.unobserve(target)
+    }
+  }, { rootMargin: '0px 0px 40px 0px' })
+
+  profiles.forEach((profile) => profileObserver.observe(profile))
+}

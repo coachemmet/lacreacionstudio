@@ -131,6 +131,20 @@ ul{padding-left:1.25rem}
 .gallery a{display:block;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
 .gallery a:hover{border-color:var(--lime)}
 .gallery img{width:100%}
+.profile-photo{overflow:hidden}
+.profile-enter{animation:profile-enter .58s cubic-bezier(.2,.7,.2,1) var(--profile-delay,0ms) backwards}
+@keyframes profile-enter{
+ from{opacity:.62;transform:translateY(.75rem)}
+ to{opacity:1;transform:translateY(0)}
+}
+@media(min-width:821px){
+ .profile:nth-child(3n+2){--profile-delay:75ms}
+ .profile:nth-child(3n+3){--profile-delay:150ms}
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .profile-photo img{transition:transform .48s cubic-bezier(.2,.7,.2,1)}
+ .profile:hover .profile-photo img{transform:scale(1.045)}
+}
 .profile img{width:100%;aspect-ratio:1;object-fit:cover;object-position:50% 36%}
 .profile .hilly{object-position:50% 34%}
 .profile .juan{object-position:50% 44%}
