@@ -71,7 +71,12 @@ ul{padding-left:1.25rem}
 .work-card h3{font-size:clamp(1.95rem,3.5vw,3.45rem);margin:.34rem 0 .4rem}
 .work-card p{color:#e3e9dd;max-width:42ch}
 .work-card .eyebrow,.video-content small,.format-card .eyebrow{letter-spacing:.06em;font-size:.79rem}
-.work-futbol img{object-position:50% 41%}
+.work-futbol{background:#451414;border-color:#79413a}
+.work-futbol img{object-position:50% 31%}
+.work-futbol::after{background:linear-gradient(0deg,#23090afb 0%,#2b0b0ce8 24%,#2b0b0c5e 52%,transparent 76%)}
+.work-futbol .eyebrow{color:#ffe1a3}
+.work-futbol p{color:#fff1dc}
+.work-futbol:hover{border-color:#e5b86b}
 .work-gaming img{object-position:50% 38%}
 .work-talent img{object-position:50% 46%}
 .feature{background:#142321}
