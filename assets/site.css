@@ -75,12 +75,10 @@ ul{padding-left:1.25rem}
 .work-gaming img{object-position:50% 38%}
 .work-talent img{object-position:50% 46%}
 .feature{background:#142321}
-.feature-layout,.about-layout,.detail-hero{display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:clamp(1.5rem,6vw,5rem)}
+.about-layout,.detail-hero{display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:clamp(1.5rem,6vw,5rem)}
 .feature h2,.about-layout h2{margin:.7rem 0 1rem}
 .feature h2{color:#e6fcf3}
 .feature .eyebrow{color:#b6f9d2}
-.feature-media{overflow:hidden;border-radius:var(--radius);border:1px solid #4a6259}
-.feature-media img{width:100%;aspect-ratio:1.4;object-fit:cover;object-position:50% 39%}
 .feature .info-grid{margin-top:2rem}
 .feature .info-card{background:#182c27;border-color:#405951}
 .feature .info-card p{color:#cbddd1}
@@ -178,7 +176,7 @@ ul{padding-left:1.25rem}
  .hero h1{font-size:clamp(3.35rem,9.6vw,5.6rem)}
 }
 @media(max-width:650px){
- .section-head,.feature-layout,.about-layout,.detail-hero{grid-template-columns:1fr}
+ .section-head,.about-layout,.detail-hero{grid-template-columns:1fr}
  .section-head p{max-width:58ch}
  .hero{min-height:0;display:block}
  .hero-media{position:relative;inset:auto;height:clamp(15rem,65vw,24rem);margin:0}
